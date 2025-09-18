@@ -1,10 +1,3 @@
-"""
-使用 marker 紀錄位置，用 marker 比較
-預設實驗，敲某個 channel，測試
-看看一開始是否會有 LSL 阻塞問題
-8.298-1.962 = 6.336
-17:53:36.209-17:53:29.823497 = 36.209-29.823 = 6.386
-"""
 # compare_with_marker_post2s.py
 import pandas as pd
 import numpy as np

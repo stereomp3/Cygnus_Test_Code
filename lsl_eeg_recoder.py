@@ -1,11 +1,3 @@
-"""
-ERD + Riemannian online pipeline (full flow) + CSV logging + Marker stream
-Author: ChatGPT
-Date: 2025-09-13
-Notes:
- - Requires pylsl, numpy, scipy, sklearn, pyriemann, mne (optional for ICA)
- - Set N_CHANNELS to actual number of channels your LSL stream provides
-"""
 import time
 import csv
 import pickle
@@ -209,8 +201,9 @@ def main_flow():
     time.sleep(2.0)
     send_marker(10)  # for test
     time.sleep(4)
-    send_marker(11)  # baseline end
-
+    send_marker(11)  # for test
+    
+    input("wait for input, and input for end...")
     # close CSV
     if csv_file:
         try:
@@ -218,7 +211,7 @@ def main_flow():
             print("[CSV] Saved EEG data to", CSV_FILENAME)
         except Exception:
             pass
-    input("wait for input, and input for end...")
+    
 
 
 if __name__ == "__main__":
