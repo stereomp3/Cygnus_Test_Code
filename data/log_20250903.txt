@@ -1,0 +1,347 @@
+wait for input, and input for start...[Main] Waiting briefly for buffer to fill...
+[Marker] Sent: 13
+[Main] Baseline starting in 2s...
+[Marker] Sent: 12
+[Marker] Sent: 10
+[Baseline] please close eyes. Waiting for 30s of data ...
+[Baseline] Done.
+[Marker] Sent: 11
+[ME collection] Start collecting 40 ME trials. Follow experiment timing.
+[ME] trial 1/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 1/40
+[ME] trial 2/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 2/40
+[ME] trial 3/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 3/40
+[ME] trial 4/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 4/40
+[ME] trial 5/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 5/40
+[ME] trial 6/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 6/40
+[ME] trial 7/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 7/40
+[ME] trial 8/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 8/40
+[ME] trial 9/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 9/40
+[ME] trial 10/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 10/40
+[ME] trial 11/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 11/40
+[ME] trial 12/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 12/40
+[ME] trial 13/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 13/40
+[ME] trial 14/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 14/40
+[ME] trial 15/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 15/40
+[ME] trial 16/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 16/40
+[ME] trial 17/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 17/40
+[ME] trial 18/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 18/40
+[ME] trial 19/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 19/40
+[ME] trial 20/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 20/40
+[ME] trial 21/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 21/40
+[ME] trial 22/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 22/40
+[ME] trial 23/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 23/40
+[ME] trial 24/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 24/40
+[ME] trial 25/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 25/40
+[ME] trial 26/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 26/40
+[ME] trial 27/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 27/40
+[ME] trial 28/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 28/40
+[ME] trial 29/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 29/40
+[ME] trial 30/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 30/40
+[ME] trial 31/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 31/40
+[ME] trial 32/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 32/40
+[ME] trial 33/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 33/40
+[ME] trial 34/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 34/40
+[ME] trial 35/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 35/40
+[ME] trial 36/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 36/40
+[ME] trial 37/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 37/40
+[ME] trial 38/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 38/40
+[ME] trial 39/40 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[ME] collected 39/40
+[ME] trial 40/40 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[ME] collected 40/40
+[MI collection] Start collecting 10 MI trials.
+[MI] trial 1/10 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[MI] collected 1/10
+[MI] trial 2/10 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[MI] collected 2/10
+[MI] trial 3/10 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[MI] collected 3/10
+[MI] trial 4/10 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[MI] collected 4/10
+[MI] trial 5/10 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[MI] collected 5/10
+[MI] trial 6/10 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[MI] collected 6/10
+[MI] trial 7/10 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[MI] collected 7/10
+[MI] trial 8/10 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[MI] collected 8/10
+[MI] trial 9/10 label=left -- preparing
+[Marker] Sent: 1
+[Marker] Sent: 3
+[MI] collected 9/10
+[MI] trial 10/10 label=right -- preparing
+[Marker] Sent: 2
+[Marker] Sent: 4
+[MI] collected 10/10
+[Calibration] Starting...
+[Calibration] Done. Trained classifier on 50 samples
+[Tuning] Searching best CONF_THRESH and RETRAIN_AFTER ...
+[Tuning] Best params: CONF_THRESH=0.4, RETRAIN_AFTER=50, acc=0.18
+wait for input, and input for start...[Online] Starting online session (48 trials)
+trial 1 start (true: left)
+[Marker] Sent: 1
+[Trial 1] t=0.0s -> current prediction: left
+[Trial 1] t=0.2s -> current prediction: left
+[Trial 1] t=0.4s -> current prediction: left
+[Trial 1] t=0.6s -> current prediction: left
+[Trial 1] t=0.8s -> current prediction: left
+[Trial 1] t=1.0s -> current prediction: left
+[Trial 1] t=1.3s -> current prediction: left
+[Trial 1] t=1.5s -> current prediction: left
+[Trial 1] t=1.7s -> current prediction: left
+[Trial 1] t=1.9s -> current prediction: left
+[Trial 1] t=2.1s -> current prediction: left
+[Trial 1] t=2.3s -> current prediction: left
+[Trial 1] t=2.5s -> current prediction: left
+[Trial 1] t=2.7s -> current prediction: left
+[Trial 1] t=2.9s -> current prediction: left
+[Trial 1] t=3.1s -> current prediction: left
+[Trial 1] t=3.3s -> current prediction: left
+[Trial 1] t=3.5s -> current prediction: left
+[Trial 1] t=3.8s -> current prediction: left
+[Trial 1] t=4.0s -> current prediction: left
+[Trial 1] t=4.2s -> current prediction: left
+[Trial 1] t=4.4s -> current prediction: left
+[Trial 1] t=4.6s -> current prediction: left
+[Trial 1] t=4.8s -> current prediction: left
+[Trial 1] t=5.0s -> current prediction: left
+[Trial 1] t=5.2s -> current prediction: left
+[Trial 1] t=5.4s -> current prediction: left
+[Trial 1] t=5.6s -> current prediction: left
+[Trial 1] t=5.8s -> current prediction: left
+[Trial 1] t=6.0s -> current prediction: left
+[Trial 1] t=6.2s -> current prediction: left
+[Trial 1] t=6.5s -> current prediction: left
+[Trial 1] t=6.7s -> current prediction: left
+[Trial 1] t=6.9s -> current prediction: left
+[Marker] Sent: 3
+trial 1 end -> final prediction: left (votes: Counter({np.str_('left'): 34}))
+trial 2 start (true: right)
+[Marker] Sent: 2
+[Trial 2] t=0.0s -> current prediction: left
+[Trial 2] t=0.2s -> current prediction: left
+[Trial 2] t=0.4s -> current prediction: left
+[Trial 2] t=0.6s -> current prediction: left
+[Trial 2] t=0.8s -> current prediction: left
+[Trial 2] t=1.0s -> current prediction: left
+[Trial 2] t=1.3s -> current prediction: left
+[Trial 2] t=1.5s -> current prediction: left
+[Trial 2] t=1.7s -> current prediction: left
+[Trial 2] t=1.9s -> current prediction: left
+[Trial 2] t=2.1s -> current prediction: left
+[Trial 2] t=2.3s -> current prediction: left
+[Trial 2] t=2.5s -> current prediction: left
+[Trial 2] t=2.7s -> current prediction: left
+[Trial 2] t=2.9s -> current prediction: left
+[Trial 2] t=3.1s -> current prediction: left
+[Trial 2] t=3.3s -> current prediction: left
+[Trial 2] t=3.5s -> current prediction: left
+[Trial 2] t=3.8s -> current prediction: left
+[Trial 2] t=4.0s -> current prediction: left
+[Trial 2] t=4.2s -> current prediction: left
+[Trial 2] t=4.4s -> current prediction: left
+[Trial 2] t=4.6s -> current prediction: left
+[Trial 2] t=4.8s -> current prediction: left
+[Trial 2] t=5.0s -> current prediction: left
+[Trial 2] t=5.2s -> current prediction: left
+[Trial 2] t=5.4s -> current prediction: left
+[Trial 2] t=5.6s -> current prediction: left
+[Trial 2] t=5.8s -> current prediction: left
+[Trial 2] t=6.0s -> current prediction: left
+[Trial 2] t=6.2s -> current prediction: left
+[Trial 2] t=6.5s -> current prediction: left
+[Trial 2] t=6.7s -> current prediction: left
+[Trial 2] t=6.9s -> current prediction: left
+[Marker] Sent: 4
+trial 2 end -> final prediction: left (votes: Counter({np.str_('left'): 34}))
+[Online] retraining model from buffers...
+[Retrain] Completed. class sizes: {'left': 59, 'right': 59, 'none': 0}
+trial 3 start (true: left)
+[Marker] Sent: 1
+[Trial 3] t=0.0s -> current prediction: left
+[Trial 3] t=0.2s -> current prediction: left
+[Trial 3] t=0.4s -> current prediction: left
+[Trial 3] t=0.6s -> current prediction: left
+[Trial 3] t=0.8s -> current prediction: right
+[Trial 3] t=1.0s -> current prediction: left
+[Trial 3] t=1.3s -> current prediction: left
+[Trial 3] t=1.5s -> current prediction: left
+[Trial 3] t=1.7s -> current prediction: left
+[Trial 3] t=1.9s -> current prediction: left
+[Trial 3] t=2.1s -> current prediction: left
+[Trial 3] t=2.3s -> current prediction: left
+[Trial 3] t=2.5s -> current prediction: left
+[Trial 3] t=2.7s -> current prediction: right
+[Trial 3] t=2.9s -> current prediction: left
+[Trial 3] t=3.1s -> current prediction: right
+[Trial 3] t=3.3s -> current prediction: left
+[Trial 3] t=3.5s -> current prediction: left
+[Trial 3] t=3.7s -> current prediction: left
+[Trial 3] t=4.0s -> current prediction: right
+[Trial 3] t=4.2s -> current prediction: left
+[Trial 3] t=4.4s -> current prediction: left
+[Trial 3] t=4.6s -> current prediction: left
+[Trial 3] t=4.8s -> current prediction: left
+[Trial 3] t=5.0s -> current prediction: left
+[Trial 3] t=5.2s -> current prediction: left
+[Trial 3] t=5.4s -> current prediction: left
+[Trial 3] t=5.6s -> current prediction: left
+[Trial 3] t=5.8s -> current prediction: left
+[Trial 3] t=6.0s -> current prediction: left
+[Trial 3] t=6.2s -> current prediction: left
+[Trial 3] t=6.5s -> current prediction: right
+[Trial 3] t=6.7s -> current prediction: left
+[Trial 3] t=6.9s -> current prediction: left
+[Marker] Sent: 3
+trial 3 end -> final prediction: left (votes: Counter({np.str_('left'): 29, np.str_('right'): 5}))
+trial 4 start (true: right)
+[Marker] Sent: 2
+[Trial 4] t=0.0s -> current prediction: left
+[Trial 4] t=0.2s -> current prediction: left
+[Trial 4] t=0.4s -> current prediction: left
+[Trial 4] t=0.6s -> current prediction: right
+[Trial 4] t=0.8s -> current prediction: left
+[Trial 4] t=1.0s -> current prediction: left
+[Trial 4] t=1.3s -> current prediction: left
+[Trial 4] t=1.5s -> current prediction: left
+[Trial 4] t=1.7s -> current prediction: left
+[Trial 4] t=1.9s -> current prediction: left
+[Trial 4] t=2.1s -> current prediction: left
+[Trial 4] t=2.3s -> current prediction: right
+[Trial 4] t=2.5s -> current prediction: left
+[Trial 4] t=2.7s -> current prediction: left
