@@ -1,3 +1,6 @@
+"""
+20250924 correlate function 不能完全抓到偏移，因為測過在 shift = 0 的資料位移 100 多後，channel 各會產生不一的結果，原本時間對齊的資料 shift 皆為 0
+"""
 # compare_with_csv_no_merge.py
 import pandas as pd
 import numpy as np
@@ -6,9 +9,10 @@ from io import StringIO
 from scipy.signal import correlate, iirnotch, butter, filtfilt
 from sklearn.linear_model import LinearRegression
 
-
 # ---- helper functions ----
 fs = 500  # 500 Hz
+
+
 def design_notch(fs, freq=50, Q=30):
     """設計 notch 濾波器"""
     b, a = iirnotch(freq / (fs / 2), Q)
@@ -26,6 +30,7 @@ def apply_bandpass(data, fs, low, high, order=4):
     nyq = 0.5 * fs
     b, a = butter(order, [low / nyq, high / nyq], btype='band')
     return filtfilt(b, a, data, axis=0)
+
 
 def read_cygnus_csv(path, encoding='utf-8'):
     with open(path, 'r', encoding=encoding) as f:
@@ -65,6 +70,61 @@ def find_lag(y_c, y_r):
     return lag
 
 
+#
+# def find_lag(y_c, y_r, window_size=500, min_pairs=100):
+#     """
+#     Sliding-window 比對：
+#     - 以 y_r 的前 window_size samples 當作 template（若 y_r 長度 < window_size，則用完整 y_r）
+#     - 在 y_c 上做 sliding window（長度 = window_size），計算每個位置與 template 的 RMSE（忽略 NaN）
+#     - 回傳使 RMSE 最小的位移 start_index（整數，表示 template 的第 0 個 sample 應對齊到 y_c[start_index]）
+#     - 若找不到有效比較（例如 y_c 太短或所有窗的有效配對數都 < min_pairs），會回傳 None
+#     """
+#     y_c = np.asarray(y_c, dtype=float)
+#     y_r = np.asarray(y_r, dtype=float)
+#
+#     # 避免 window 太大或太小
+#     if window_size <= 0:
+#         raise ValueError("window_size 必須大於 0")
+#
+#     # 決定用於比對的 template（來自 y_r）
+#     if len(y_r) == 0 or len(y_c) == 0:
+#         return None  # 沒資料
+#     if len(y_r) < window_size:
+#         template = y_r.copy()
+#         w = len(template)
+#     else:
+#         template = y_r[:window_size].copy()
+#         w = window_size
+#
+#     n_c = len(y_c)
+#     if n_c < w:
+#         # y_c 太短，無法做 sliding window；退回 None（也可改為使用整段 cross-corr）
+#         return None
+#
+#     best_idx = None
+#     best_score = np.inf
+#
+#     # 逐位置比較（可改為 vectorized 以加速，但此版簡單明確）
+#     for start in range(0, n_c - w + 1):
+#         seg = y_c[start:start + w]
+#
+#         # 只在雙方都有數值的位置計算誤差
+#         mask = ~np.isnan(seg) & ~np.isnan(template)
+#         n_valid = int(mask.sum())
+#         if n_valid < min_pairs:
+#             continue
+#
+#         diff = seg[mask] - template[mask]
+#         # RMSE
+#         score = np.sqrt(np.mean(diff ** 2))
+#
+#         if score < best_score:
+#             best_score = score
+#             best_idx = start
+#
+#     # best_idx = 起始位移；若 None 表示沒找到合格窗
+#     return best_idx
+
 def overlay_plot(ch, y_c, y_r, t, align=False, n_samples=None, is_plot=False, ax=None):
     if align:
         lag = find_lag(y_c, y_r)
@@ -72,11 +132,13 @@ def overlay_plot(ch, y_c, y_r, t, align=False, n_samples=None, is_plot=False, ax
             y_r = np.concatenate([np.full(lag, np.nan), y_r[:-lag]])
         elif lag < 0:
             y_r = np.concatenate([y_r[-lag:], np.full(-lag, np.nan)])
-        print(f"{ch} 對齊 lag = {lag} samples (~{lag / 500:.3f} 秒)。real-time shift.")
+        print(f"{ch} 對齊 lag = {lag} samples (~{lag / 500:.3f} 秒)")
 
     if n_samples:
         y_c = y_c[:n_samples]
         y_r = y_r[:n_samples]
+        # y_c = apply_bandpass(y_c, fs, 1, 40)  # 1-40 Hz
+        # y_r = apply_bandpass(y_r, fs, 1, 40)
         t = t[:n_samples]
 
     diff = y_c - y_r
@@ -94,15 +156,21 @@ def overlay_plot(ch, y_c, y_r, t, align=False, n_samples=None, is_plot=False, ax
 # cygnus_path = "test_data/_cygnus_record.csv" # 沒腦波資料
 # realtime_path = "test_data/_realtime_record.csv"
 
-cygnus_path = "data/250914175336.csv"  # 腦波資料
-realtime_path = "data/eeg_record.csv"
+# cygnus_path = "data/250914175336.csv"  # 腦波資料
+# realtime_path = "data/eeg_record.csv"  # .809 對齊資料 .823497 原本 差 0.14 7 sample
+
+# cygnus_path = "data/202050924_signal/labrecoder/250924155622.csv"  # 腦波資料
+# realtime_path = "data/202050924_signal/labrecoder/lab_recorder.csv"  # lab recoder xdf to csv
+
+cygnus_path = "data/202050924_signal/labrecoder/250924155622.csv"  # 腦波資料
+realtime_path = "data/202050924_signal/labrecoder/lab_recorder.csv"  # lab recoder xdf to csv
 
 df_cy, dt_cy = read_cygnus_csv(cygnus_path)
 df_rt, dt_rt = read_realtime_csv(realtime_path)
 
 # 計算 Record datetime 差異
 time_diff = dt_cy - dt_rt
-print("Record datetime 差（cygnus - realtime）:", time_diff)
+print("Record datetime  差（cygnus - realtime）:", time_diff)
 
 # drop unnamed/empty columns
 df_cy = df_cy.loc[:, ~df_cy.columns.str.contains('^Unnamed')]
@@ -162,12 +230,12 @@ for i, ch in enumerate(channels):
     # y_c = apply_bandpass(y_c, fs, 1, 40)  # 1-40 Hz
     # y_r = apply_bandpass(y_r, fs, 1, 40)
     ax = axs[i]
-    diff = overlay_plot(ch, y_c, y_r, t, align=False, n_samples=2000, is_plot=True, ax=ax)
-    # diff = overlay_plot(ch, y_c, y_r, t, align=False, is_plot=True, ax=ax)
+    diff = overlay_plot(ch, y_c, y_r, t, align=True, n_samples=2000, is_plot=True, ax=ax)
+    # diff = overlay_plot(ch, y_c, y_r, t, align=True, is_plot=True, ax=ax)
     diff_dict[ch] = diff
 
     # 計算統計量
-    mask = ~np.isnan(y_c) & ~np.isnan(y_r)
+    mask = ~np.isnan(y_c) & ~np.isnan(y_r)  # ~ = not
     corr = np.corrcoef(y_c[mask], y_r[mask])[0, 1] if np.sum(mask) >= 2 else np.nan
 
     stats[ch] = {
@@ -189,5 +257,3 @@ for j in range(len(channels), len(axs)):
 fig.suptitle("Cygnus vs Real-time Overlay", fontsize=16)
 fig.tight_layout(rect=[0, 0.03, 1, 0.97])  # 調整空間避免標題擋住子圖
 plt.show()
-
-
