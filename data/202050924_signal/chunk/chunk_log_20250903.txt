@@ -1,0 +1,6 @@
+Resolving streams...
+Found stream: Cygnus-329018-RawEEG
+Found stream: MarkerStream
+Found stream: Cygnus-329018-Marker
+Connected to LSL stream: Cygnus-329018-RawEEG
+wait for input, and input for start...
